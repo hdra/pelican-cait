@@ -21,7 +21,6 @@ Cait includes templates for a landing page and a contact page. In order to use i
 the template name needs to be included in itself. The page also need to include a metadata
 property for `heading and subheading`. An example of the landing page:
 
-    :::markdown
     Title: Landing
     Heading: Hello! My Name is John Doe
     Subheading: Some subheading sentence to put int.
@@ -39,7 +38,6 @@ The landing page and contact templates includes a link to the other part of the 
 in the `MENUITEMS` tuple. The links are included in the `(Title, url)` format. The url are specified
 relative to the `SITEURL`.
 
-    :::python
     MENUITEMS = (('Blog', `blog`),
                  ('Contact', 'contact'),
                  ('Projects', '[ages/projects'))
@@ -51,7 +49,6 @@ configuration file, also in the `(title, url)` format. The title should be in lo
 to corresponds with the `icon-*` classes of FontAwesome. The title is only used to display the icon
 and will not be displayed, so, any [icons][ic] from FontAwesome can be used as the display icon. Example:
 
-    :::python
     SOCIAL = (('twitter', 'https://twitter.com/example1'),
               ('facebook', 'https://www.facebook.com/example1'),
               ('google-plus', 'https://plus.google.com/example1'),
@@ -64,12 +61,23 @@ email address, the `CONTACT_EMAIL` needs to be set in the configuration file. Ad
 contact information can be displayed in the same way as the social links, this time with the
 `CONTACT_EMAIL` tuple.
 
-    :::python
     CONTACT_EMAIL = "me@example.com"
     CONTACTS = (('facebook', 'https://www.facebook.com/fbAcc'),
                 ('twitter', 'https://twitter.com/twttrAcc'),)
 
+#Screenshots
+![Post index screenshot][sc1]
+
+![Landing page screenshot][sc2]
+
+![Post index narrow screenshot][sc3]
+
+#LICENSE
+MIT
 
 [pelican]: http://getpelican.com
 [fa]:http://fortawesome.github.io
 [ic]: http://fortawesome.github.io/Font-Awesome/#icons-social
+[sc1]: screenshot1.png
+[sc2]: screenshot2.png
+[sc3]: screenshot3.png
