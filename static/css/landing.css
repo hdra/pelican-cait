@@ -1,0 +1,62 @@
+body {
+  background-color: #eeeeee; }
+
+#content-box {
+  background: url("../img/stressed_linen/stressed_linen.png") repeat;
+  padding: 12px;
+  margin: 7% auto 0 auto;
+  color: #eeeeee;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  border-bottom: 2px solid #38c5c5; }
+
+#intro-header {
+  font-family: "Oswald", sans-serif;
+  text-align: center; }
+  #intro-header h1 {
+    font-size: 3.5em;
+    margin-top: 12px;
+    margin-bottom: 12px; }
+
+.centered-nav {
+  text-align: center;
+  padding: 0; }
+  .centered-nav li {
+    display: inline; }
+  .centered-nav a {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    display: inline-block;
+    color: #eeeeee;
+    text-decoration: none; }
+  .centered-nav a:hover {
+    color: #38c5c5;
+    text-shadow: 0 0 12px #8e927e; }
+
+#nav-links {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8em; }
+  #nav-links a {
+    margin: 0 6px;
+    padding: 3px; }
+
+#nav-services li {
+  margin: 6px; }
+
+.svc-badge {
+  font-size: 36px;
+  width: 50px;
+  display: inline-block; }
+
+#contact-form {
+  text-align: center; }
+
+#contact-methods {
+  margin-top: 2em; }
+  #contact-methods li {
+    margin: 0 24px; }
+    #contact-methods li h3 {
+      margin: 0.3em 0; }

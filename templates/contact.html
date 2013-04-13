@@ -1,0 +1,32 @@
+{% extends "landing.html" %}
+
+{% block content %}
+<div id="content-box" class="angle-shadow">
+    <header id="intro-header">
+        <h1>{{ page.heading }}</h1>
+    </header>
+    <div id="contact-form">
+        <h2>{{ page.subheading }}</h2>
+        {{ page.content }}
+        <ul id="contact-methods" class="centered-nav">
+            {% if CONTACT_EMAIL %}
+            <li><a href="mailto:{{ CONTACT_EMAIL }}"><i class="icon-envelope-alt svc-badge"></i><h3>Email</h3></a></li>
+            {% endif %}
+            {% for title,url in CONTACTS %}
+            <li><a href="{{ url }}">
+                <i class="icon-{{ title }} svc-badge"></i><h3>{{ title|capitalize }}</h3>
+            </a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <hr/>
+    <nav>
+        <ul id="nav-links" class="centered-nav">
+            {% for name, url in MENUITEMS %}
+                <li><a href="{{ SITEURL }}/{{ url }}">{{ name }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+    {% include "footer.html" %}
+</div>
+{% endblock content %}

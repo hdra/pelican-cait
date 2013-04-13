@@ -1,0 +1,14 @@
+<header id="sidebar" class="side-shadow">
+    <hgroup id="site-header">
+        <a id="site-title" href="{{ SITEURL }}"><h1><i class="icon-coffee"></i> {{ SITENAME }}</h1></a>
+        <p id="site-desc">{% if SITESUBTITLE %} {{ SITESUBTITLE }} {% endif %}</p>
+    </hgroup>
+    <nav>
+        <ul id="nav-links">
+            {% for name, url in MENUITEMS %}
+                <li><a href="{{ SITEURL }}/{{ url }}">{{ name }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+    {% include "footer.html" %}
+</header>

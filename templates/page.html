@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ page.title }}
+{% endblock title %}
+
+{% block stylesheets %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/blog.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/github.css">
+{% endblock stylesheets %}
+
+{% block content %}
+{% include "sidebar.html" %}
+
+<div id="post-container">
+    <ol id="post-list">
+        <li>
+            <article class="post-entry">
+                <header class="entry-header">
+                    <a href="{{ SITEURL }}/{{ page.url }}" rel="bookmark"><h1>{{ page.title }}</h1></a>
+                </header>
+                <section class="post-content">
+                    {{ page.content }}
+                </section>
+                <hr/>
+            </article>
+        </li>
+    </ol>
+</div>
+{% endblock %}
