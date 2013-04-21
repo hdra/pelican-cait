@@ -2,10 +2,6 @@
 
 Cait is a theme for static site generator, [Pelican][pelican]
 
-** Warning: The current version of the theme doesn't display list of pages and categories
-as usual. The list of links to be displayed must be explicitly defined in the `MENUITEMS`.
-Maybe future update will add options to choose the way links are displayed. **
-
 Cait is a simple responsive (kind of) theme consisting of mostly black, gray, and white.
 
 ## Features:
@@ -33,14 +29,19 @@ For the contact page, change the 4th line to `Template: contact`.
 In order to use the landing and contact template, several additional setting values must be specified
 in the configuration file. 
 
-### MENUITEMS
+### USE_CUSTOM_MENU
 The landing page and contact templates includes a link to the other part of the site. These are specified
-in the `MENUITEMS` tuple. The links are included in the `(Title, url)` format. The url are specified
+in the `CUSTOM_MENUITEMS` tuple. The links are included in the `(Title, url)` format. The url are specified
 relative to the `SITEURL`.
 
-    MENUITEMS = (('Blog', `blog`),
+    CUSTOM_MENUITEMS = (('Blog', `blog`),
                  ('Contact', 'contact'),
                  ('Projects', '[ages/projects'))
+
+The blog templates aren't required to display the `CUSTOM_MENUITEMS`, in which case will display the 
+links to the static pages of the site. To use `CUSTOM_MENUITEMS`, specify `USE_CUSTOM_MENU = True`
+in the configuration file. Please not that by using the `CUSTOM_MENUITEMS`, the links
+to the pages will not be displayed.
 
 ### SOCIAL
 The landing page can includes links to several social networks. The links are shown in icons, using 
