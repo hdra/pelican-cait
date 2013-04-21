@@ -199,10 +199,18 @@ body{
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
     #nav-links{
-        li{
-            display: block;
-        }
+        font-size: 1.1em;
+    }
+    #site-desc{
+        font-size: 1em;
+    }
+    #site-title h1{
+        font-size: 1.3em;
+        margin: 0.1em 0px;
+    }
+    #site-info{
+        font-size: 0.6em;
     }
 }
