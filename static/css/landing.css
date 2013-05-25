@@ -1,14 +1,15 @@
 body {
-  background-color: #eeeeee; }
+  /* background-color: $white; */
+  background: url("../img/stressed_linen/stressed_linen.png") repeat;
+  border-bottom: 6px solid #38c5c5; }
 
 #content-box {
-  background: url("../img/stressed_linen/stressed_linen.png") repeat;
   padding: 12px;
-  margin: 5% auto;
+  /* margin: 5% auto; */
   color: #eeeeee;
   font-family: "Raleway", sans-serif;
   font-size: 1.2em;
-  border-bottom: 2px solid #38c5c5; }
+  /* border-bottom: 2px solid $accent1; */ }
 
 #intro-header {
   font-family: "Oswald", sans-serif;
