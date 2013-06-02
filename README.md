@@ -79,6 +79,6 @@ MIT
 [pelican]: http://getpelican.com
 [fa]:http://fortawesome.github.io
 [ic]: http://fortawesome.github.io/Font-Awesome/#icons-social
-[sc1]: screenshot1.png
-[sc2]: screenshot4.png
-[sc3]: screenshot3.png
+[sc1]: sc1.png
+[sc2]: sc4.png
+[sc3]: sc3.png
