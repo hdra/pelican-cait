@@ -80,5 +80,5 @@ MIT
 [fa]:http://fortawesome.github.io
 [ic]: http://fortawesome.github.io/Font-Awesome/#icons-social
 [sc1]: screenshot1.png
-[sc2]: screenshot2.png
+[sc2]: screenshot4.png
 [sc3]: screenshot3.png
