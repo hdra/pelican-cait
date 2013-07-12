@@ -1,7 +1,7 @@
 body {
   color: #272822;
   background-color: #eeeeee;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Lato", sans-serif; }
 
 #sidebar {
   background: url("../img/stressed_linen/stressed_linen.png") repeat;
@@ -97,7 +97,7 @@ body {
   padding: 10px;
   margin: 10px;
   overflow: auto;
-  font-family: "PT Mono", monospace; }
+  font-family: "Ubuntu Mono", "Inconsolata", monospace; }
 
 .post-meta a {
   font-style: italic;
