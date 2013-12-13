@@ -14,8 +14,9 @@ Cait is a simple responsive (kind of) theme consisting of mostly black, gray, an
 ## Landing and Contact Page
 ** Only works on the latest version of Pelican. ( > 3.1.1 )
 Cait includes templates for a landing page and a contact page. In order to use it,
-the template name needs to be included in itself. The page (which has to go to 
-*content/pages*) also need to include a metadata property for `heading and subheading`. 
+the template name needs to be included in itself. The page has to go to your
+static pages directory (which is defined in your pelican config file with the `PAGE_DIR`). 
+It also need to include a metadata property for `heading and subheading`. 
 An example of the landing page:
 
     Title: Landing
