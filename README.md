@@ -36,7 +36,7 @@ relative to the `SITEURL`.
 
     CUSTOM_MENUITEMS = (('Blog', `blog`),
                  ('Contact', 'contact'),
-                 ('Projects', 'ages/projects'))
+                 ('Projects', 'pages/projects'))
 
 The blog templates aren't required to display the `CUSTOM_MENUITEMS`, in which case will display the 
 links to the static pages of the site. To use `CUSTOM_MENUITEMS`, specify `USE_CUSTOM_MENU = True`
