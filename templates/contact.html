@@ -10,11 +10,11 @@
         {{ page.content }}
         <ul id="contact-methods" class="centered-nav">
             {% if CONTACT_EMAIL %}
-            <li><a href="mailto:{{ CONTACT_EMAIL }}"><i class="icon-envelope-alt svc-badge"></i><h3>Email</h3></a></li>
+            <li><a href="mailto:{{ CONTACT_EMAIL }}"><i class="fa fa-envelope-alt svc-badge"></i><h3>Email</h3></a></li>
             {% endif %}
             {% for title,url in CONTACTS %}
             <li><a href="{{ url }}">
-                <i class="icon-{{ title }} svc-badge"></i><h3>{{ title|capitalize }}</h3>
+                <i class="fa fa-{{ title }} svc-badge"></i><h3>{{ title|capitalize }}</h3>
             </a></li>
             {% endfor %}
         </ul>
