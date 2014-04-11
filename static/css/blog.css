@@ -45,14 +45,17 @@ body {
   padding: 0;
   font-family: "Oswald", sans-serif;
   font-size: 2em;
-  font-variant: bold; }
+  font-variant: bold;
+  text-align: right;
+}
   #nav-links li {
     margin: 12px 12px; }
   #nav-links a {
-    padding: 0 24px;
+    /*padding: 0 24px;
     border-radius: 24px;
     display: inline-block;
     border: 3px solid #eeeeee;
+    */
     line-height: 1.8em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -60,7 +63,7 @@ body {
     -o-transition: all 0.3s;
     transition: all 0.3s; }
   #nav-links a:hover {
-    border-color: #38c5c5;
+    /*border-color: #38c5c5;*/
     color: #38c5c5; }
 
 #post-list {

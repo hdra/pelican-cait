@@ -1,20 +1,20 @@
 <header id="sidebar" class="side-shadow">
-    <hgroup id="site-header">
-        <a id="site-title" href="{{ SITEURL }}"><h1><i class="fa fa-coffee"></i> {{ SITENAME }}</h1></a>
-        <p id="site-desc">{% if SITESUBTITLE %} {{ SITESUBTITLE }} {% endif %}</p>
-    </hgroup>
-    <nav>
-        <ul id="nav-links">
-            {% if USE_CUSTOM_MENU %}
-            {% for name, url in CUSTOM_MENUITEMS %}
-                <li><a href="{{ SITEURL }}/{{ url }}">{{ name }}</a></li>
-            {% endfor %}
-            {% else %}
-            {% for page in PAGES %}
-                <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
-            {% endfor %}
-            {% endif %}
-        </ul>
-    </nav>
-    {% include "footer.html" %}
+  <hgroup id="site-header">
+    <a id="site-title" href="{{ SITEURL }}"><h1><i class="bk-logo-border"></i> {{ SITENAME }}</h1></a>
+    <p id="site-desc">{% if SITESUBTITLE %} {{ SITESUBTITLE }} {% endif %}</p>
+  </hgroup>
+  <nav>
+    <ul id="nav-links">
+      {% if USE_CUSTOM_MENU %}
+      {% for name, url in CUSTOM_MENUITEMS %}
+        <li><a href="{{ SITEURL }}/{{ url }}">{{ name }}</a></li>
+      {% endfor %}
+      {% else %}
+      {% for page in PAGES %}
+        <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+      {% endfor %}
+      {% endif %}
+    </ul>
+  </nav>
+  {% include "footer.html" %}
 </header>
