@@ -1,0 +1,203 @@
+@import '_defs';
+
+body {
+  color: @black;
+  background-color: @white;
+  font-family: @font1;
+}
+
+#nav-links {
+  list-style: none;
+  padding: 0;
+  font-family: @font2;
+  font-size: 2em;
+  font-variant: bold;
+  text-align: right;
+  li {
+    margin: 12px 12px;
+  }
+  a {
+    line-height: 1.8em;
+    .transition;
+    &:hover {
+      color: @accent;
+    }
+  }
+}
+
+#post-container {
+  position: relative;
+  margin-left: 27%;
+  max-width: 800px;
+  overflow-wrap: break-word;
+}
+
+#post-list {
+  list-style: none;
+}
+
+#sidebar {
+  background: @pattern;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: auto;
+  top: 0;
+  width: 25%;
+  min-width: 200px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: @white;
+  a {
+    color: @white;
+    text-decoration: none;
+  }
+}
+
+#site-desc {
+  font-size: 1.3em;
+  padding: 0 6px;
+}
+
+#site-title {
+  font-family: @font2;
+  font-size: 2em;
+  .transition;
+  &:hover {
+    color: @accent;
+  }
+}
+
+.entry-header {
+  font-family: @font2;
+  font-variant: bold;
+  a {
+    color: @black;
+    text-decoration: none;
+
+    &:hover {
+      color: @accent;
+      text-decoration: none;
+    }
+  }
+  time {
+    color: @gray;
+  }
+  h1 {
+    margin: 0.5em 0;
+  }
+}
+
+.paginator {
+  text-align: center;
+  padding: 12px;
+  font-size: 1.4em;
+  font-family: @font2;
+  a {
+    color: @black;
+    text-decoration: none;
+    &:hover {
+      color: @accent;
+    }
+  }
+}
+
+.post-content {
+  a {
+    color: @accent;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  blockquote {
+    font-style: italic;
+  }
+  pre {
+    font-size: 13px;
+    background-color: @prebg;
+    padding: 10px;
+    margin: 10px;
+    overflow: auto;
+    font-family: @font3;
+  }
+}
+
+.post-entry {
+  margin: 3em 0;
+}
+
+.post-meta {
+  a {
+    font-style: italic;
+    color: @accent;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #nav-links {
+    text-align: center;
+    padding: 0;
+    font-size: 1.8em;
+    li {
+      display: inline;
+      margin-top: 6px;
+    }
+    a {
+      display: inline-block;
+    }
+  }
+
+  #post-container {
+    width: 100%;
+    position: static;
+    margin: 0;
+    padding: 0px;
+  }
+
+  #post-list {
+    padding: 0;
+  }
+
+  #sidebar {
+    position: static;
+    width: 100%;
+    padding: 0;
+  }
+
+  #site-header {
+    margin-left: 18px;
+  }
+
+  #site-title h1 {
+    margin-top: 0;
+  }
+
+  .post-entry {
+    padding: 0 12px;
+  }
+
+  .side-shadow {
+    .shadow(0 3px 12px 3px @gray);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #nav-links {
+    font-size: 1.1em;
+  }
+
+  #site-desc {
+    font-size: 1em;
+  }
+
+  #site-info {
+    font-size: 0.6em;
+  }
+
+  #site-title h1 {
+    font-size: 1.3em;
+    margin: 0.1em 0px;
+  }
+}

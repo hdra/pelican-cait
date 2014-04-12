@@ -1,0 +1,75 @@
+@import '_defs';
+
+body {
+  background: @pattern;
+  border-top: 6px solid @accent;
+}
+
+#contact-form {
+  text-align: center;
+}
+
+#contact-methods {
+  margin-top: 2em;
+  li {
+    margin: 0 24px;
+    h3 {
+      margin: 0.3em 0;
+    }
+  }
+}
+
+#content-box {
+  padding: 12px;
+  color: @white;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2em;
+}
+
+#intro-header {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  h1 {
+    font-size: 3.5em;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+#nav-links {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8em;
+  a {
+    margin: 0 6px;
+    padding: 3px;
+  }
+}
+
+#nav-services {
+  li {
+    margin: 6px;
+  }
+}
+
+.centered-nav {
+  text-align: center;
+  padding: 0;
+  li {
+    display: inline;
+  }
+  a {
+    .transition;
+    display: inline-block;
+    color: @white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: @accent;
+    text-shadow: 0 0 12px @gray;
+  }
+}
+.svc-badge {
+  font-size: 36px;
+  width: 50px;
+  display: inline-block;
+}
