@@ -33,18 +33,18 @@
       {% if articles_page.has_previous() %}
         {% if articles_page.previous_page_number() == 1 %}
           <a href="{{ siteurl }}/{{ page_name }}.html">
-            <i class="icon-circle-arrow-left"></i>
+            <i class="fa fa-arrow-circle-left"></i>
           </a>
         {% else %}
           <a href="{{ siteurl }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html">
-            <i class="icon-circle-arrow-left"></i>
+            <i class="fa fa-arrow-circle-left"></i>
           </a>
         {% endif %}
       {% endif %}
       Page {{ articles_page.number }} / {{ articles_paginator.num_pages }}
       {% if articles_page.has_next() %}
         <a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">
-          <i class="icon-circle-arrow-right"></i>
+          <i class="fa fa-arrow-circle-right"></i>
         </a>
       {% endif %}
     </div>
