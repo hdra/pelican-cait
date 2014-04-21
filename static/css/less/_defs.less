@@ -1,0 +1,23 @@
+@accent: #38C5C5;
+@black: #272822;
+@font1: 'Lato', sans-serif;
+@font2: 'Oswald', sans-serif;
+@font3: 'Ubuntu Mono', 'Inconsolata', monospace;
+@gray: #8E927E;
+@pattern: url("../img/dark_Tire.png") repeat;
+@prebg: #E6E6E6;
+@white: #EEEEEE;
+
+.shadow (@params) {
+  -webkit-box-shadow: @params;
+  -moz-box-shadow: @params;
+  box-shadow: @params;
+}
+
+.transition (@time: 0.3s) {
+  -webkit-transition: all @time;
+  -moz-transition: all @time;
+  -ms-transition: all @time;
+  -o-transition: all @time;
+  transition: all @time;
+}
