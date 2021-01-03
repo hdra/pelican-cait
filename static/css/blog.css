@@ -29,10 +29,30 @@ body {
   transition: all 0.3s; }
   #site-title:hover {
     color: #38c5c5; }
+  #site-title h1{
+    position: relative;
+    margin-left: 8%;
+  }
+#site-title img{
+  height: 1em;
+}
+
+#contact-roll {
+  margin-top: 103%;
+}
+
+#contact-roll h2 {
+    margin-left: 2%;
+    margin-bottom: 4%;
+}
+
+#contact-roll a {
+    padding: 6%;
+}
 
 #site-desc {
-  font-size: 1.3em;
-  padding: 0 6px; }
+  font-size: 0em;
+  padding: 0px; }
 
 #post-container {
   position: relative;
@@ -47,7 +67,8 @@ body {
   font-size: 2em;
   font-variant: bold; }
   #nav-links li {
-    margin: 12px 12px; }
+    margin-left: 2%;
+    margin-top: 5%}
   #nav-links a {
     padding: 0 24px;
     border-radius: 24px;

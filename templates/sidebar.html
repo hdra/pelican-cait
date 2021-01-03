@@ -1,19 +1,21 @@
 <header id="sidebar" class="side-shadow"> <hgroup id="site-header">
-           <a id="site-title" href="{{ SITEURL }}"><h1><i class="icon-coffee"></i> {{ SITENAME }}</h1></a>
+           <a id="site-title" href="{{ SITEURL }}"><h1><img src="{{ SITEURL }}/theme/img/terminal-solid.svg" width=auto height=auto></img>{{ SITENAME }}</h1></a>
         <p id="site-desc">{% if SITESUBTITLE %} {{ SITESUBTITLE }} {% endif %}</p>
     </hgroup>
     <nav>
         <ul id="nav-links">
-            {% if USE_CUSTOM_MENU %}
-            {% for name, url in CUSTOM_MENUITEMS %}
-                <li><a href="{{ SITEURL }}/{{ url }}">{{ name }}</a></li>
-            {% endfor %}
-            {% else %}
             {% for page in pages %}
                 <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
             {% endfor %}
-            {% endif %}
         </ul>
     </nav>
-    {% include "footer.html" %}
+    <nav id="contact-roll">
+        <h2>get in touch</h3>
+        
+        <a href="https://github.com/hkcountryman"><img src="{{ SITEURL }}/theme/img/github.png" width="32" height="32"></img></a>
+                
+        <a href="https://linkedin.com"><img src="{{ SITEURL }}/theme/img/linkedin.svg" width="32" height="32"></img></a>
+                
+        <a href="mailto:hkcountryman@gmail.com"><img src="https://icon-library.com/images/email-png-icon/email-png-icon-19.jpg"  width="32" height="32"></img></a>
+    </nav>
 </header>
